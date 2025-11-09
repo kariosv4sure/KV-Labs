@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KV LABS — The Vision in Motion ⚡</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --neon: #00ffff;
+    --bg: #050505;
+    --fg: #ffffff;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    text-align: center;
+    overflow-x: hidden;
+  }
+  nav {
+    background: rgba(255,255,255,0.05);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  nav a {
+    color: var(--fg);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: var(--neon);
+  }
+  .hero {
+    padding: 100px 20px;
+  }
+  .hero h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    color: var(--neon);
+    margin-bottom: 10px;
+  }
+  .hero p {
+    color: #ccc;
+    font-size: 15px;
+    max-width: 700px;
+    margin: 0 auto 20px;
+  }
+  .btn {
+    background: var(--neon);
+    color: #000;
+    padding: 10px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
+    transition: 0.3s;
+  }
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  .projects, .recruit {
+    padding: 60px 20px;
+  }
+  .project {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px auto;
+    max-width: 320px;
+  }
+  .project h3 {
+    color: var(--neon);
+    margin-bottom: 8px;
+  }
+  .recruit {
+    max-width: 700px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.05);
+    padding: 40px;
+    border-radius: 12px;
+  }
+  .recruit h2 {
+    color: var(--neon);
+    margin-bottom: 15px;
+  }
+  .recruit p {
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .roles {
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.6em;
+  }
+  .roles strong {
+    color: var(--neon);
+  }
+  .recruit input, .recruit button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+  }
+  .recruit input {
+    background: #fff;
+    color: #000;
+  }
+  .recruit button {
+    background: var(--neon);
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #formMsg {
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 10px;
+  }
+  footer {
+    padding: 30px 10px;
+    color: #888;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#projects">Projects</a>
+  <a href="#recruit">Join</a>
+</nav>
+
+<section id="home" class="hero">
+  <h1>KV LABS</h1>
+  <p>⚡ Founded by <span style="color:var(--neon)">Karios Vantari</span> — building a new-age IT company with <strong>no funding, just vision</strong>.  
+  A dream turning into a mission: gather the best minds to create the next wave of innovation.</p>
+  <a href="#recruit" class="btn">Join The Vision</a>
+</section>
+
+<section id="projects" class="projects">
+  <div class="project">
+    <h3>Talk KV 🧠</h3>
+    <p>A diary that listens, learns, and evolves — your digital soul companion.</p>
+    <a href="https://talk-kv.onrender.com" target="_blank" class="btn">Launch</a>
+  </div>
+  <div class="project">
+    <h3>KV Dominate ⚙️</h3>
+    <p>Predict, control, and dominate with intelligent precision.</p>
+    <a href="https://kv-dominate.onrender.com" target="_blank" class="btn">Launch</a>
+  </div>
+  <div class="project">
+    <h3>KARIOS X AI 🤖</h3>
+    <p>Adaptive, learning, evolving — the KV way.</p>
+    <a href="https://kariosxai.onrender.com" target="_blank" class="btn">Version 1</a>
+    <a href="https://kariosxaiv2.onrender.com" target="_blank" class="btn" style="margin-left:10px;">Version 2</a>
+  </div>
+</section>
+
+<section id="recruit" class="recruit">
+  <h2>Join the KV Guild ⚔️</h2>
+  <p>We’re gathering our founding IT team — not for cash, but for purpose.  
+  KV LABS is a digital movement shaping the future of code, design, and AI innovation.  
+  We’re turning vision into mission — and mission into a legacy.</p>
+
+  <div class="roles">
+    <p><strong>We’re recruiting:</strong></p>
+    <ul>
+      <li>🧠 <strong>Frontend Developers</strong> — React, Tailwind, and Next.js.</li>
+      <li>⚙️ <strong>Backend Developers</strong> — Python, Node.js, Flask, FastAPI.</li>
+      <li>🧩 <strong>Full-Stack Engineers</strong> — Bridge logic and design perfectly.</li>
+      <li>🎨 <strong>UI/UX Designers</strong> — Make every interaction an experience.</li>
+      <li>🧑‍💻 <strong>Mobile Developers</strong> — Flutter, React Native, or Kotlin.</li>
+      <li>🛰️ <strong>Cybersecurity Analysts</strong> — Build safe digital ecosystems.</li>
+      <li>🧬 <strong>AI Engineers</strong> — Train models, design intelligent systems.</li>
+      <li>📊 <strong>Product Managers</strong> — Lead teams and shape outcomes.</li>
+      <li>🌐 <strong>Marketing & Brand Strategists</strong> — Tell the KV story.</li>
+      <li>🧭 <strong>Operations & Project Managers</strong> — Keep the ship aligned.</li>
+      <li>🪄 <strong>Creative Content Designers</strong> — Graphics, motion, and identity.</li>
+      <li>💼 <strong>Community & Team Managers</strong> — Connect people and energy.</li>
+    </ul>
+  </div>
+
+  <form id="recruitForm">
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="number" id="age" placeholder="Age" required>
+    <input type="text" id="skills" placeholder="Your Skills / Role Interest" required>
+    <button type="submit">Join the Mission</button>
+  </form>
+  <p id="formMsg"></p>
+</section>
+
+<footer>
+  © 2025 <span style="color:var(--neon)">KV LABS</span> — Vision by <span style="color:var(--neon)">Karios Vantari</span> ⚡  
+</footer>
+
+<script>
+  const form = document.getElementById("recruitForm");
+  const msg = document.getElementById("formMsg");
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    const name = document.getElementById("name").value.trim();
+    const age = document.getElementById("age").value.trim();
+    const skills = document.getElementById("skills").value.trim();
+    if (!name || !age || !skills) {
+      msg.textContent = "⚠️ Please fill in all fields!";
+      return;
+    }
+    msg.textContent = "⚙️ Processing your KV Guild entry...";
+    setTimeout(() => {
+      msg.innerHTML = `✅ Welcome, ${name}!<br>Age: ${age}<br>Skills / Interest: ${skills}`;
+      const mailBtn = document.createElement("a");
+      mailBtn.href = `mailto:kariosvantari@gmail.com?subject=KV Guild Application&body=Name: ${encodeURIComponent(name)}%0AAge: ${encodeURIComponent(age)}%0ASkills: ${encodeURIComponent(skills)}`;
+      mailBtn.textContent = "Send to KV HQ";
+      mailBtn.className = "btn";
+      msg.appendChild(document.createElement("br"));
+      msg.appendChild(mailBtn);
+      form.reset();
+    }, 800);
+  });
+</script>
+
+</body>
+</html>
